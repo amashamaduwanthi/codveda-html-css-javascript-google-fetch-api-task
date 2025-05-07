@@ -14,5 +14,18 @@ function displayBooks(books) {
       bookList.innerHTML = "<p>No books found.</p>";
       return;
     }
+    bookList.innerHTML = books.map(book => {
+        const info = book.volumeInfo;
+        const thumbnail = info.imageLinks?.thumbnail || "https://via.placeholder.com/128x195?text=No+Image";
+        
+        return `
+          <div class="card">
+            <img src="${thumbnail}" alt="${info.title}" />
+            <h3>${info.title || "No title"}</h3>
+            <p><strong>Author:</strong> ${info.authors ? info.authors.join(", ") : "Unknown"}</p>
+            <p><strong>Published:</strong> ${info.publishedDate || "N/A"}</p>
+          </div>
+        `;
+      }).join("");
   
 }
