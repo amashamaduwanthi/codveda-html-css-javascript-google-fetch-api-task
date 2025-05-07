@@ -37,3 +37,25 @@ body {
     box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
     background-color: #f9f9ff;
   }
+  button{
+    padding: 12px 20px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.2);
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(1px);
+  background-color: #004a99;
+}
+  
