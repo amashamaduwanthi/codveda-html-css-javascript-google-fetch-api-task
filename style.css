@@ -19,4 +19,21 @@ body {
   h1 {
     color: #797474;
   }
-  
+  input{
+    padding: 12px 15px;
+    width: 60%;
+    max-width: 400px;
+    margin-top: 20px;
+    border:2px solid#797474;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition:all 0.3s ease ;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    background-color: #ffffff;
+  }
+  input:focus{
+    border-color: #007bff;
+    box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
+    background-color: #f9f9ff;
+  }
