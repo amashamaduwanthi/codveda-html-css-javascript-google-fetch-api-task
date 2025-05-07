@@ -58,4 +58,25 @@ button:active {
   transform: translateY(1px);
   background-color: #004a99;
 }
-  
+.card-grid{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    margin-top: 40px;
+    padding: 10px;
+}
+.card{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05 green, blue, alpha);
+    text-align: left;
+    transition: transform 0.2s ease,box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15 green, blue, alpha);
+} 
