@@ -4,3 +4,19 @@ body {
     margin: 0;
     padding: 0;
   }
+
+  .container {
+     padding: 20px;
+     max-width: 1000px;
+     margin: auto;
+     text-align: center;
+  }
+
+  h2{
+    color: #bd1212;
+  }
+
+  h1 {
+    color: #797474;
+  }
+  
